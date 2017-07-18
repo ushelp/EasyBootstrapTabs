@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>EasyBootstrapTabs Demo</title>
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap3/css/bootstrap.min.css" />
+
+	</head>
+
+	<body>
+
+		<div class="container-fluid">
+
+			<div class="page-header">
+				<h1>EasyBootstrapTabs <small>Support multi-tab, close button, contextmenu to close, refresh and js api</small></h1>
+			</div <div class="row">
+
+			<div class="col-md-2 col-lg-2 col-sm-4 col-xs-4">
+				<div class="list-group">
+					<a href="#" class="list-group-item active">
+						Dashboard
+					</a>
+					<a onclick="EasyBootstrapTabs.selectTab('home')" class="list-group-item">Home</a>
+					<a onclick="EasyBootstrapTabs.addTab('profile','Profile info','profile.html')" class="list-group-item">Profile</a>
+					<a onclick="EasyBootstrapTabs.addTab('messages','Messages info','message.html')" class="list-group-item">Messages</a>
+					<a onclick="EasyBootstrapTabs.addTab('settings','Settings info','settings.html')" class="list-group-item">Settings</a>
+				</div>
+			</div>
+			<div class="col-md-10 col-lg-10 col-sm-8 col-xs-8">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs bg-info" role="tablist" id="myTab">
+					<li role="presentation" class="active">
+						<a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-home text-success"></i> Home</a>
+					</li>
+					<li role="presentation">
+						<a href="#test" aria-controls="profile" role="tab" data-toggle="tab">Test
+							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+						</a>
+					</li>
+
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="home">Home</div>
+					<div role="tabpanel" class="tab-pane" id="test">
+						<h1>Test API</h1>
+						<p>
+							<button type="button" class="btn-danger" onclick="EasyBootstrapTabs.removeTab('test')">Close Test</button>
+						</p>
+						<p>
+							<button type="button" class="btn-danger" onclick="EasyBootstrapTabs.removeTab('home', true)">Close Home Force</button>
+						</p>
+						<p>
+							<button type="button" class="btn-danger" onclick="EasyBootstrapTabs.removeAllTab()">Close All</button>
+						</p>
+						<p> 
+							<button type="button" class="btn-danger" onclick="EasyBootstrapTabs.removeAllTab(true)">Close All Force </button>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		</div>
+
+		<script src="../lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/bootstrap3/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.contextify.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- EasyBootstrap START-->
+		<!-- tabs-->
+		<style type="text/css">
+			#myTab span.glyphicon-remove {
+				cursor: pointer;
+				color: #a94442
+			}
+			
+			#myTab span.glyphicon-remove:hover {
+				cursor: pointer;
+				color: #D72A1F
+			}
+		</style>
+		<script src="../dist/easy.bootstrap.tabs.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../dist/lang/easy.bootstrap.tabs-lang-en.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			EasyBootstrapTabs.init('#myTab');
+		</script>
+		<!-- EasyBootstrap END-->
+	</body>
+
+</html>

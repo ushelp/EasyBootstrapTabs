@@ -1,0 +1,42 @@
+{
+	"name": "easybootstraptabs",
+	"title": "EasyBootstrapTabs",
+	"version": "1.2.0",
+	"description": "Bootstrap(bootstrap-based) tabs plugin. Support multi-tab, close button, contextmenu to close, refresh and js api.",
+	"main": "dist/easy.bootstrap.tabs.min.js",
+	"homepage": "https://github.com/ushelp/EasyBootstrapTabs#readme",
+	"author": "Ray <inthinkcolor@gmail.com>",
+	"directories": {
+		"doc": "doc",
+		"test": "test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ushelp/EasyBootstrapTabs.git"
+	},
+	"keywords": [
+		"EasyBootstrapTabs",
+		"Bootstrap",
+		"BootstrapTab",
+		"BootstrapTabs",
+		"Bootstrap tab",
+		"Boostrap tabs",
+		"plugin",
+		"library"
+	],
+	"bugs": {
+		"url": "https://github.com/ushelp/EasyBootstrapTabs/issues "
+	},
+	"license": "MIT",
+	"dependencies": {
+		"bootstrap3": "^3.3.5",
+		"jquery": "^3.2.1",
+		"jquery-contextify": "^1.0.8"
+	},
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-contrib-clean": "^1.0.0",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-uglify": "^2.0.0"
+	}
+}
