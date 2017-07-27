@@ -31,6 +31,8 @@
 
 ## Demo
 
+![Demo3](doc/images/demo3.png)
+
 ![Demo1](doc/images/demo1.png)
 
 ![Demo2](doc/images/demo2.png)
@@ -58,8 +60,9 @@
 	</li>
 	<li role="presentation">
 		<a href="#test" aria-controls="profile" role="tab" data-toggle="tab">
+			Test 
 			<!-- Add close button-->
-			Test <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 		</a>
 	</li>
 
@@ -81,8 +84,6 @@
 <!-- Bootstrap3 -->
 <link rel="stylesheet" type="text/css" href="../lib/bootstrap3/css/bootstrap.min.css" />
 <script src="../lib/bootstrap3/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-<!-- jquery.contextify.min.js -->
-<script src="../lib/jquery.contextify.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- EasyBootstrap START-->
 <!-- Close button style-->
@@ -97,6 +98,8 @@
 	}
 </style>
 <!-- plugin&languages -->
+<!-- jquery.contextify.min.js -->
+<script src="../lib/jquery.contextify.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../dist/easy.bootstrap.tabs.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../dist/lang/easy.bootstrap.tabs-lang-en.js" type="text/javascript" charset="utf-8"></script>
 
@@ -140,7 +143,7 @@
 	 * Remove all tabs
 	 * @param {Boolean} Optional; Remove the tab include without close button tab 
 	 */
-	removeTab: function(id[, force]) 
+	removeAllTab: function(force) 
 	```
 
 

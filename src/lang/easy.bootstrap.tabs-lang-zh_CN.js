@@ -1,7 +1,7 @@
 /**
  * EasyBootstrapTabs Plugin language - zh_CN 
  * 
- * Version 1.2.0
+ * Version 1.2.1
  * 
  * http://easyproject.cn 
  * https://github.com/ushelp
