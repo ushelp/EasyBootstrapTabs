@@ -195,7 +195,7 @@
 				},
 				error: function(xhr, textStatus, err) {
 					$(idSelector).html('Error：' + textStatus);
-					console.err(err);
+					console.error(err);
 				},
 				complete: function(xhr, textStatus) {},
 				success: function(data, textStatus, jqXHR) {
