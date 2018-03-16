@@ -1,7 +1,7 @@
 {
 	"name": "easybootstraptabs",
 	"title": "EasyBootstrapTabs",
-	"version": "1.2.1",
+	"version": "1.3.0",
 	"description": "Bootstrap(bootstrap-based) tabs plugin. Support multi-tab, close button, contextmenu to close, refresh and js api.",
 	"main": "dist/easy.bootstrap.tabs.min.js",
 	"homepage": "https://github.com/ushelp/EasyBootstrapTabs#readme",

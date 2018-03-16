@@ -1,7 +1,7 @@
 /**
  * EasyBootstrapTabs
  * 
- * Version 1.2.1
+ * Version 1.3.0
  * 
  * http://easyproject.cn 
  * https://github.com/ushelp
@@ -74,13 +74,21 @@
 		// Remove content&tab
 		$(contentId).remove();
 		a.parent().remove();
+		
+		// Remove from urlTabs
+		$.each(urlTabs, function(i, v){
+			if('#'+v.id==a.attr('href')){
+				urlTabs.splice(i,1);
+				return false;
+			}
+		})
 	},
 	tabsInit=function (tabObj) {
 
 		tabObj.find('a').off('click');
 		tabObj.find('span.glyphicon-remove').off('click');
 
-		tabObj.find('a').click(function(e) {
+		tabObj.find('a').off('click').click(function(e) {
 			e.preventDefault()
 
 			//		$(this).tab('show')
@@ -101,7 +109,7 @@
 //			}
 		})
 
-		tabObj.find('span.glyphicon-remove').on('click', function() {
+		tabObj.find('span.glyphicon-remove').off('click').on('click', function() {
 			var a = $(this).parent();
 			closeTab(a);
 		})
@@ -185,6 +193,7 @@
 		a.has(':not(.glyphicon-remove)').contextify(options);
 	},
 	loadContent=function(idSelector, url, data){
+		
 		$.ajax({
 				type: EasyBootstrapTabs.method,
 				url: url,
